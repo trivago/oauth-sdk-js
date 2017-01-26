@@ -1,0 +1,24 @@
+{
+  "env": {
+    "release": {
+      "presets": ["es2015-minimal-rollup"],
+      "plugins": ["transform-flow-strip-types", "dev-expression"]
+    },
+    "production": {
+      "presets": ["es2015-minimal-rollup"],
+      "plugins": [
+        "transform-flow-strip-types",
+        "dev-expression"
+      ]
+    },
+    "mocha": {
+      "presets": ["node6"],
+      "plugins": [
+        ["transform-es2015-classes", {
+          "loose": true
+        }],
+        "transform-flow-strip-types"
+      ]
+    }
+  }
+}
