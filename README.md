@@ -12,7 +12,7 @@ This package provides possibility for third party applications to log in with tr
 
 First of all you need to get a client ID.
 
-If you don't have one, you need create a request to Hotel Manager team or another responsible team in order to get it.
+If you don't have one, please send a request to Christina.Gkofa@trivago.com
 
 ## How to start
 
@@ -47,17 +47,17 @@ We have several predefined scopes that you can use at the moment:
 If you don't pass any scopes, default one will be used (personal_info).
 
 ## API reference
- 
+
 ### trvOauthSdk(clientId, options)
- 
+
 Method to initialize your application. Returns an object with `authorize` method in it.
 Throws an error if `clientId` was not specified or was not a string.
 
 #### clientId `<string>` *required*
 A clientId provided by trivago in order to make possible to log in with trivago.
- 
+
 #### options `<object>` *optional*
- 
+
 ##### options.scope `string`:
 
 Oauth scope, default: '' (empty string)
@@ -73,7 +73,7 @@ Consider the next example which shows how this library can be used:
 <script type="text/javascript" src="path/to/trv.sdk.js"></script>
 <script type="text/javascript">
     var sdk = trvOauthSdk('your-client-id');
-    
+
     var button = document.getElementById('button');
     button.addEventListener('click', onClick);
     function onClick() {
